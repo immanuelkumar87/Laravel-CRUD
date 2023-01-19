@@ -32,7 +32,7 @@ jobs:
         run: |
             composer require "laravel/framework:^8.83" "phpunit/phpunit:^8.0" "doctrine/dbal:^3.0" --no-interaction --no-update --no-suggest
             composer update --prefer-dist --no-interaction
-      - name: Execute tests
+      #- name: Execute tests
         #run: vendor/bin/phpunit --coverage-clover coverage.xml
      # - name: Check test coverage
       #  id: test-coverage
