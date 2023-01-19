@@ -39,7 +39,7 @@ jobs:
         uses: johanvanhelden/gha-clover-test-coverage-check@v1
         with:
           percentage: "1"
-          filename: coverage_1.xml
+          filename: coverage.xml
           metric: elements
           rounded-precision: 2
       - name: Generate the badge SVG image
