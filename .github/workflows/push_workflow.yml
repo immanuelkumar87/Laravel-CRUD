@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v3
       - name: NPM Build
         run: |
           npm install
@@ -26,7 +26,7 @@ jobs:
     needs: [ build-js-production ]
     if: github.ref == 'refs/heads/main'
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v3
       - name: Fetch built assets from Artifacts
         uses: actions/download-artifact@v1
         with:
